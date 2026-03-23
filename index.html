@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <!-- Google AdSense Main Code -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3036128934622320" crossorigin="anonymous"></script>
     
     <link rel="icon" type="image/png" sizes="1280x1280" href="favicon.png">
@@ -9,8 +8,6 @@
     <meta charset="UTF-8">
     <title>Das Passwort Spiel</title>
     
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3036128934622320"
-     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
@@ -33,7 +30,13 @@
             min-height: 100vh;
         }
 
-        /* Werbe-Sidebar Styling */
+        /* Logo Styling */
+        .header img {
+            height: 60px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
         .ad-sidebar {
             width: 160px; 
             height: 600px;
@@ -95,7 +98,6 @@
             padding: 4px 8px; border-radius: 4px; border: 1px solid var(--border);
         }
 
-        /* Reset Modal */
         #reset-modal {
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0,0,0,0.4); z-index: 2000; align-items: center; justify-content: center;
@@ -140,9 +142,7 @@
         </div>
     </div>
 
-    <!-- Ad Units -->
     <div class="ad-sidebar ad-left">
-        <!-- Display Ad Left -->
         <ins class="adsbygoogle"
              style="display:inline-block;width:160px;height:600px"
              data-ad-client="ca-pub-3036128934622320"
@@ -151,7 +151,6 @@
     </div>
 
     <div class="ad-sidebar ad-right">
-        <!-- Display Ad Right -->
         <ins class="adsbygoogle"
              style="display:inline-block;width:160px;height:600px"
              data-ad-client="ca-pub-3036128934622320"
@@ -160,7 +159,10 @@
     </div>
 
     <div class="main-content">
-        <div class="header"><h1>The Password Game</h1></div>
+        <div class="header">
+            <a href="https://johanness7.github.io/"><img src="logo.png" alt="s7 hub logo"></a>
+            <h1>The Password Game</h1>
+        </div>
 
         <div id="password-container">
             <div class="input-group">
@@ -201,8 +203,8 @@
             <a href="https://www.instagram.com/johannessiebecke" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
         </div>
         <div class="legal-links" style="margin-top: 20px; text-align: center; font-size: 12px; opacity: 0.5;">
-    <a href="privacy.html" style="color:inherit; text-decoration:none;">Privacy & Policy</a>
-</div>
+            <a href="privacy.html" style="color:inherit; text-decoration:none;">Privacy & Policy</a>
+        </div>
     </div>
 
     <script>
@@ -211,7 +213,6 @@
         const rulesContainer = document.getElementById('rules-container');
         const progressText = document.getElementById('progress-text');
         const resetModal = document.getElementById('reset-modal');
-
         const gameHour = new Date().getHours().toString();
 
         const rules = [
